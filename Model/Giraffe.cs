@@ -10,10 +10,6 @@ namespace Model
 
         public override void Bewegen()
         {
-            //bewegen
-            x += xRichting;
-            y += yRichting;
-
             //horizontale richting omkeren als de rand van het veld is bereikt
             if (x == xMin || x == xMax)
             {
@@ -25,6 +21,10 @@ namespace Model
             {
                 yRichting = yRichting * -1;
             }
+
+            //bewegen
+            x += xRichting;
+            y += yRichting;
         }
 
         public override void TekenDier()

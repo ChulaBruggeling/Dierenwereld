@@ -7,10 +7,13 @@ namespace Model
     public class Dier
     {
         public string DrawSign = "*";
+        //startpositie
         public int x;
         public int y;
+        //beweegrichting
         public int xRichting = 1;
         public int yRichting = 1;
+        //velddimensies
         public int xMin = 0;
         public int xMax = 9;
         public int yMin = 0;
