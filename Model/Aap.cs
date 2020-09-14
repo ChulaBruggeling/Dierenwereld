@@ -30,5 +30,12 @@ namespace Model
                 }
             }
         }
+
+        public void TekenDier()
+        {
+            Console.Clear();
+            Console.SetCursorPosition(x, y);
+            Console.Write("A");
+        }
     }
 }
