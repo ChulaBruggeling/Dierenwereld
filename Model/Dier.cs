@@ -6,6 +6,7 @@ namespace Model
 {
     public class Dier
     {
+        public string DrawSign = "*";
         public int x = 0;
         public int y = 0;
         public int xRichting = 1;
@@ -14,6 +15,12 @@ namespace Model
         public virtual void Bewegen()
         {
 
+        }
+
+        public virtual void TekenDier()
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(DrawSign);
         }
     }
 }

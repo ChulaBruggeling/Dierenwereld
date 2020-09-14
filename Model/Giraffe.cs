@@ -6,6 +6,7 @@ namespace Model
 {
     public class Giraffe : Dier
     {
+        public new string DrawSign = "G";
 
         public override void Bewegen()
         {
@@ -21,6 +22,12 @@ namespace Model
             {
                 yRichting = yRichting * -1;
             }
+        }
+
+        public override void TekenDier()
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(DrawSign);
         }
     }
 }

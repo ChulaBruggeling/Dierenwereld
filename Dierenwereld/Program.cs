@@ -17,8 +17,18 @@ namespace Dierenwereld
 
             for(; ; )
             {
+                Console.Clear();
+
                 OnzeAap.Bewegen();
                 OnzeAap.TekenDier();
+
+                OnzeTijger.Bewegen();
+                OnzeTijger.TekenDier();
+
+                OnzeGiraffe.Bewegen();
+                OnzeGiraffe.TekenDier();
+
+
                 Thread.Sleep(500);
             }
         }
