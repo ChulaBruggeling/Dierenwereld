@@ -6,6 +6,7 @@ namespace Model
 {
     public class Tijger : Dier
     {
+        public new string DrawSign = "T";
 
         public override void Bewegen()
         {
@@ -17,6 +18,12 @@ namespace Model
             {
                 yRichting = yRichting * -1;
             }
+        }
+
+        public override void TekenDier()
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(DrawSign);
         }
     }
 }

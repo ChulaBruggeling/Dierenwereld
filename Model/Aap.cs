@@ -4,7 +4,8 @@ namespace Model
 {
     public class Aap : Dier
     {
-        
+        public new string DrawSign = "A";
+
         public override void Bewegen()
         {
             //bewegen
@@ -17,11 +18,11 @@ namespace Model
             }
         }
 
-        public void TekenDier()
+        public override void TekenDier()
         {
-            Console.Clear();
             Console.SetCursorPosition(x, y);
-            Console.Write("A");
+            Console.Write(DrawSign);
         }
+
     }
 }
