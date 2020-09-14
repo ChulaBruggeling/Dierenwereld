@@ -10,15 +10,18 @@ namespace Model
 
         public override void Bewegen()
         {
+            //bewegen
             x += xRichting;
             y += yRichting;
 
-            if (x == 9 || x == 0)
+            //horizontale richting omkeren als de rand van het veld is bereikt
+            if (x == xMin || x == xMax)
             {
                 xRichting = xRichting * -1;
             }
 
-            if (y == 9 || y == 0)
+            //verticale richting omkeren als de rand van het veld is bereikt
+            if (y == yMin || y == yMax)
             {
                 yRichting = yRichting * -1;
             }
