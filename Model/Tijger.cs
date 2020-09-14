@@ -9,29 +9,11 @@ namespace Model
 
         public override void Bewegen()
         {
-            if (Richting)
+            y += yRichting;
+
+            if (y == 9 || y == 0)
             {
-                if (y == 9)
-                {
-                    Richting = false;
-                    y -= 1;
-                }
-                else
-                {
-                    y += 1;
-                }
-            }
-            else
-            {
-                if (y == 0)
-                {
-                    Richting = true;
-                    y += 1;
-                }
-                else
-                {
-                    y -= 1;
-                }
+                yRichting = yRichting * -1;
             }
         }
     }
